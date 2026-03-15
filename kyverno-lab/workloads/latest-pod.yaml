@@ -10,7 +10,7 @@ spec:
     runAsUser: 1000
   containers:
   - name: main
-    image: nginx:latest
+    image: docker.io/nginx:latest
     resources:
       requests:
         cpu: 100m

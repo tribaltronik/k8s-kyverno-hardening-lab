@@ -12,7 +12,7 @@ spec:
     fsGroup: 2000
   containers:
   - name: main
-    image: nginx:1.21
+    image: docker.io/nginx:1.21
     resources:
       requests:
         cpu: 100m

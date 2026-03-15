@@ -361,14 +361,14 @@ Each file must be created under `kyverno-lab/workloads/`.
 
 ## Checklist
 
-- [ ] Run `scripts/create-cluster.sh`
-- [ ] Run `scripts/install-kyverno.sh`
-- [ ] Run `scripts/apply-policies.sh`
-- [ ] Run `scripts/test-all.sh`
-- [ ] Confirm:
+- [x] Run `scripts/create-cluster.sh`
+- [x] Run `scripts/install-kyverno.sh`
+- [x] Run `scripts/apply-policies.sh`
+- [x] Run `scripts/test-all.sh`
+- [x] Confirm:
   - **DENY**: privileged, insecure, latest, no-resources, bad-registry
   - **ALLOW**: secure, versioned, resources
-- [ ] Run `scripts/delete-cluster.sh`
+- [x] Run `scripts/delete-cluster.sh`
 
 ---
 

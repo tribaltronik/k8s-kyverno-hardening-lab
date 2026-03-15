@@ -3,7 +3,7 @@ kind: ClusterPolicy
 metadata:
   name: restrict-image-registries
 spec:
-  validationFailureAction: Enforce
+  validationFailureAction: enforce
   background: true
   rules:
     - name: only-allow-dockerhub-and-ghcr

@@ -3,7 +3,7 @@ kind: ClusterPolicy
 metadata:
   name: require-secure-context
 spec:
-  validationFailureAction: Enforce
+  validationFailureAction: enforce
   background: true
   rules:
     - name: require-non-root-and-readonly
