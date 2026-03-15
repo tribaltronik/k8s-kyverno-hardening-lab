@@ -1,0 +1,21 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: restrict-image-registries
+spec:
+  validationFailureAction: Enforce
+  background: true
+  rules:
+    - name: only-allow-dockerhub-and-ghcr
+      match:
+        any:
+          - resources:
+              kinds:
+                - Pod
+      validate:
+        message: "Images must come from docker.io or ghcr.io."
+        pattern:
+          spec:
+            containers:
+              - name: "*"
+                image: "docker.io/* | ghcr.io/*"

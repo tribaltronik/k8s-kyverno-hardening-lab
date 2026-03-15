@@ -30,8 +30,8 @@ Provide a minimal single‑node kind cluster configuration.
 
 ## Checklist
 
-- [ ] Create file `kyverno-lab/kind-cluster.yaml`
-- [ ] Insert the following content exactly:
+- [x] Create file `kyverno-lab/kind-cluster.yaml`
+- [x] Insert the following content exactly:
 
 ```yaml
 kind: Cluster
@@ -57,9 +57,9 @@ All scripts must be created under `kyverno-lab/scripts/` and made executable.
 
 ### Checklist
 
-- [ ] Create file `scripts/create-cluster.sh`
+- [x] Create file `scripts/create-cluster.sh`
 
-- [ ] Add:
+- [x] Add:
 
 ```bash
 #!/usr/bin/env bash
@@ -75,9 +75,9 @@ kubectl get nodes -o wide
 
 ### Checklist
 
-- [ ] Create file `scripts/delete-cluster.sh`
+- [x] Create file `scripts/delete-cluster.sh`
 
-- [ ] Add:
+- [x] Add:
 
 ```bash
 #!/usr/bin/env bash
@@ -90,9 +90,9 @@ kind delete cluster --name kyverno-lab
 
 ### Checklist
 
-- [ ] Create file `scripts/install-kyverno.sh`
+- [x] Create file `scripts/install-kyverno.sh`
 
-- [ ] Add:
+- [x] Add:
 
 ```bash
 #!/usr/bin/env bash
@@ -113,9 +113,9 @@ kubectl get pods -n kyverno
 
 ### Checklist
 
-- [ ] Create file `scripts/apply-policies.sh`
+- [x] Create file `scripts/apply-policies.sh`
 
-- [ ] Add:
+- [x] Add:
 
 ```bash
 #!/usr/bin/env bash
@@ -135,9 +135,9 @@ sleep 10
 
 ### Checklist
 
-- [ ] Create file `scripts/test-all.sh`
+- [x] Create file `scripts/test-all.sh`
 
-- [ ] Add:
+- [x] Add:
 
 ```bash
 #!/usr/bin/env bash
@@ -178,19 +178,19 @@ echo "=== Test suite complete ==="
 
 ### Checklist
 
-- [ ] Download file from:
+- [x] Download file from:
 
-  `https://raw.githubusercontent.com/kyverno/policies/main/pod-security/restricted/restricted.yaml`
+  `https://raw.githubusercontent.com/kyverno/policies/main/other/apply-pss-restricted-profile/apply-pss-restricted-profile.yaml`
 
-- [ ] Save as `policies/pss-restricted.yaml`
+- [x] Save as `policies/pss-restricted.yaml`
 
 ## 4.2 Create cpol-require-secure-context.yaml
 
 ### Checklist
 
-- [ ] Create file `policies/cpol-require-secure-context.yaml`
+- [x] Create file `policies/cpol-require-secure-context.yaml`
 
-- [ ] Insert exact content:
+- [x] Insert exact content:
 
 ```yaml
 apiVersion: kyverno.io/v1
@@ -223,9 +223,9 @@ spec:
 
 ### Checklist
 
-- [ ] Create file `policies/cpol-disallow-latest.yaml`
+- [x] Create file `policies/cpol-disallow-latest.yaml`
 
-- [ ] Insert:
+- [x] Insert:
 
 ```yaml
 apiVersion: kyverno.io/v1
@@ -255,9 +255,9 @@ spec:
 
 ### Checklist
 
-- [ ] Create file `policies/cpol-require-resources.yaml`
+- [x] Create file `policies/cpol-require-resources.yaml`
 
-- [ ] Insert:
+- [x] Insert:
 
 ```yaml
 apiVersion: kyverno.io/v1
@@ -293,9 +293,9 @@ spec:
 
 ### Checklist
 
-- [ ] Create file `policies/cpol-restrict-image-registries.yaml`
+- [x] Create file `policies/cpol-restrict-image-registries.yaml`
 
-- [ ] Insert:
+- [x] Insert:
 
 ```yaml
 apiVersion: kyverno.io/v1
