@@ -329,14 +329,14 @@ Each file must be created under `kyverno-lab/workloads/`.
 
 ## Checklist
 
-- [ ] `workloads/privileged-pod.yaml`
-- [ ] `workloads/insecure-pod.yaml`
-- [ ] `workloads/secure-pod.yaml`
-- [ ] `workloads/latest-pod.yaml`
-- [ ] `workloads/versioned-pod.yaml`
-- [ ] `workloads/no-resources-pod.yaml`
-- [ ] `workloads/resources-pod.yaml`
-- [ ] `workloads/bad-registry-pod.yaml`
+- [x] `workloads/privileged-pod.yaml`
+- [x] `workloads/insecure-pod.yaml`
+- [x] `workloads/secure-pod.yaml`
+- [x] `workloads/latest-pod.yaml`
+- [x] `workloads/versioned-pod.yaml`
+- [x] `workloads/no-resources-pod.yaml`
+- [x] `workloads/resources-pod.yaml`
+- [x] `workloads/bad-registry-pod.yaml`
 
 (Each file contains the exact YAML previously defined.)
 
