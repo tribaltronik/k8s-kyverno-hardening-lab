@@ -4,6 +4,8 @@ A local Kubernetes security-hardening lab using **kind** and **Kyverno** to demo
 
 ## Overview
 
+![Architecture](docs/diagram.png)
+
 This lab sets up a single-node kind cluster with Kyverno policy engine to test various security policies:
 
 - **PSS Restricted Profile** - Pod Security Standards restricted policies
