@@ -346,9 +346,9 @@ Each file must be created under `kyverno-lab/workloads/`.
 
 ## Checklist
 
-- [ ] Create file `README.md`
+- [x] Create file `README.md`
 
-- [ ] Include:
+- [x] Include:
   - Overview of the lab
   - Prerequisites
   - Quick start commands
